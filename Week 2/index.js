@@ -135,3 +135,9 @@ const cleanedSentence = sentence1.replace(/[@#%&;!$]/g, "");
 console.log(cleanedSentence)
 
 // 4.
+const income = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+let [monthlySalary, annualBonus, monthlyCourse] = income.match(/\d+/g);
+[monthlySalary, annualBonus, monthlyCourse] = [parseInt(monthlySalary), parseInt(annualBonus), parseInt(monthlyCourse)];
+console.log([monthlySalary, annualBonus, monthlyCourse]);
+const annualIncome = (monthlySalary * 12) + annualBonus + (monthlyCourse * 12);
+console.log(annualIncome);
