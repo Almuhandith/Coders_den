@@ -73,7 +73,8 @@ console.log(!(python.includes('on') && dragon.includes('on')));
 
 // 7.
 const now = new Date
-console.log(now.getFullYear());
+let Year = now.getFullYear()
+console.log(Year);
 console.log(now.getMonth() + 1);
 console.log(now.getDate());
 console.log(now.getDay());
@@ -83,37 +84,37 @@ console.log(now.getTime() / 1000);
 
 // Level 2
 // 1.
-// let base =  prompt('Enter base', '');
-// let height = prompt('Enter height', '');
-// let areaOfTriangle = 0.5 * base * height;
-// console.log(areaOfTriangle);
-// alert(`The area of your triangle is ${areaOfTriangle}`);
+let base =  prompt('Enter base', '');
+let height = prompt('Enter height', '');
+let areaOfTriangle = 0.5 * base * height;
+console.log(areaOfTriangle);
+alert(`The area of your triangle is ${areaOfTriangle}`);
 
-// // 2.
-// let a = prompt('Enter side a', '');
-// let b = prompt('Enter side b', '');
-// let c = prompt('Enter side c', '');
-// let perimeterOfTriangle = a + b + c;
-// console.log(perimeterOfTriangle);
-// alert(`The perimeter of your triangle is ${perimeterOfTriangle}`);
+// 2.
+let a = prompt('Enter side a', '');
+let b = prompt('Enter side b', '');
+let c = prompt('Enter side c', '');
+let perimeterOfTriangle = a + b + c;
+console.log(perimeterOfTriangle);
+alert(`The perimeter of your triangle is ${perimeterOfTriangle}`);
 
-// // 3.
-// let length = prompt('What is the length of your rectangle?', '');
-// let width =  prompt('What is the width of your rectangle?', '');
-// let areaOfRectangle = length * width;
-// let perimeterOfRectangle = 2 * (length + width);
-// console.log(areaOfRectangle);
-// console.log(perimeterOfRectangle);
-// alert(`The area of your rectangle is ${areaOfRectangle} and its perimeter is ${perimeterOfRectangle}`);
+// 3.
+let length = prompt('What is the length of your rectangle?', '');
+let width =  prompt('What is the width of your rectangle?', '');
+let areaOfRectangle = length * width;
+let perimeterOfRectangle = 2 * (length + width);
+console.log(areaOfRectangle);
+console.log(perimeterOfRectangle);
+alert(`The area of your rectangle is ${areaOfRectangle} and its perimeter is ${perimeterOfRectangle}`);
 
-// // 4.
-// const pi = 3.14;
-// let radius = prompt('What is the radius of your circle?', '');
-// let areaOfCircle = pi * radius * radius
-// let circumferenceOfCircle  = 2 * pi * radius
-// console.log(areaOfCircle);
-// console.log(circumferenceOfCircle);
-// alert(`The area of your circle is ${areaOfCircle} and its circumference is ${circumferenceOfCircle}`);
+// 4.
+const pi = 3.14;
+let radius = prompt('What is the radius of your circle?', '');
+let areaOfCircle = pi * radius * radius
+let circumferenceOfCircle  = 2 * pi * radius
+console.log(areaOfCircle);
+console.log(circumferenceOfCircle);
+alert(`The area of your circle is ${areaOfCircle} and its circumference is ${circumferenceOfCircle}`);
 
 // 5.
 
@@ -164,3 +165,50 @@ console.log(quad(9));
 console.log(quad(-3));
 
 // 9.
+let hours = prompt('Enter hours: ', '')
+let rate = prompt('Enter rate per hour: ', '')
+let pay = hours * rate
+console.log(`Your weekly earning is ${pay}`)
+
+// 10.
+let myName = prompt('Enter your name: ', '')
+if (myName.length > 7){
+    console.log('Your name is long');
+}else {
+    console.log('Your name is short');
+}
+// 11.
+
+if(firstName.length > lastName.length) {
+    console.log(`My first name, ${firstName}  is longer than my family name, ${lastName}.`);
+} else if (firstName.length < lastName.length) {
+    console.log(`My first name, ${firstName}  is shorter than my family name, ${lastName}.`);
+} else {
+    console.log(`My first name, ${firstName}  is just as long as my family name, ${lastName}.`);
+}
+
+// 12.
+
+let myAge = 250;
+let yourAge = 25;
+
+if (myAge > yourAge) {
+    console.log(`I am ${myAge - yourAge}  years older than you`);
+} else if (myAge < yourAge) {
+    console.log(`I am ${yourAge - myAge}  years younger than you`);
+} else {
+    console.log(`We are the same age`);
+}
+
+// 13.
+
+let birthYear = prompt('In what year were you born?', '');
+let drivingCriteria = Year - birthYear;
+
+if(drivingCriteria >= 18){
+    alert(`You are ${drivingCriteria}. You are old enough to drive.`)
+}else {
+    alert(`You are ${drivingCriteria}. You will be allowed to drive after ${18 - drivingCriteria} years`)
+}
+
+// 14.
