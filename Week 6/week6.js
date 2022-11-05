@@ -126,3 +126,17 @@ console.log(`The sum of all evens from 0 to 100 is ${evenSum}. And the sum of al
 console.log([evenSum, oddSum])
 
 // 13.
+let randomArray = [];
+for (let i = 0; i < 5; i++) {
+    randomArray.push(Math.floor(Math.random() * 10))
+}
+console.log(randomArray);
+
+// 14.
+let randArray = [];
+for (let i = 0; i < 5; i++) {
+    randArray.push(Math.floor(Math.random() * 10))
+}
+console.log(randArray);
+
+// 15.
